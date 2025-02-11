@@ -12,6 +12,7 @@ def logout(request):
 
 def login(request):
     template_data = {}
+    
     template_data['title'] = 'Login'
     if request.method == 'GET':
         return render(request, 'accounts/login.html',
